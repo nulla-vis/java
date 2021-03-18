@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="240.0" prefWidth="320.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.ac.kcg.e19c2018.SampleController">
+   <top>
+      <TextField fx:id="tf" onAction="#onAction" promptText="データを入力" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <ListView fx:id="lv" editable="true" onEditCommit="#onCommit" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

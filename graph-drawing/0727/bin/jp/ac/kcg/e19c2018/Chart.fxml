@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="320.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.ac.kcg.e19c2018.ChartController">
+   <right>
+      <VBox alignment="CENTER" prefHeight="320.0" prefWidth="86.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="18.0" prefWidth="103.0" text="氏名" textAlignment="CENTER" />
+            <ListView fx:id="list" onMouseClicked="#click" prefHeight="310.0" prefWidth="86.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <center>
+      <LineChart fx:id="chart" title="光入込客数及び観光消費額" BorderPane.alignment="CENTER">
+        <xAxis>
+          <CategoryAxis animated="false" label="年度" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis animated="false" label="消費額（千円/人）" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </center>
+</BorderPane>
